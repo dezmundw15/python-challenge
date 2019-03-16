@@ -1,0 +1,116 @@
+Last login: Sat Mar  9 11:47:19 on ttys002
+stp-er-10-129-209-170:Homework3 desmondwalker$ git clone git@github.com:dezmundw15/python-challenge.git
+Cloning into 'python-challenge'...
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+stp-er-10-129-209-170:Homework3 desmondwalker$ git clone https://github.com/dezmundw15/python-challenge.git
+Cloning into 'python-challenge'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+stp-er-10-129-209-170:Homework3 desmondwalker$ git status
+fatal: not a git repository (or any of the parent directories): .git
+stp-er-10-129-209-170:Homework3 desmondwalker$ ls
+PyPoll			Pybank			python-challenge
+stp-er-10-129-209-170:Homework3 desmondwalker$ git status
+fatal: not a git repository (or any of the parent directories): .git
+stp-er-10-129-209-170:Homework3 desmondwalker$ git status
+fatal: not a git repository (or any of the parent directories): .git
+stp-er-10-129-209-170:Homework3 desmondwalker$ ls
+PyPoll			Pybank			python-challenge
+stp-er-10-129-209-170:Homework3 desmondwalker$ git status
+fatal: not a git repository (or any of the parent directories): .git
+stp-er-10-129-209-170:Homework3 desmondwalker$ cd python-challenge
+stp-er-10-129-209-170:python-challenge desmondwalker$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	PyPoll/
+	Pybank/
+
+nothing added to commit but untracked files present (use "git add" to track)
+stp-er-10-129-209-170:python-challenge desmondwalker$ git add PyPoll
+stp-er-10-129-209-170:python-challenge desmondwalker$ git add PyBank
+stp-er-10-129-209-170:python-challenge desmondwalker$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   PyPoll/.DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	Pybank/
+
+stp-er-10-129-209-170:python-challenge desmondwalker$ git add PyBank
+stp-er-10-129-209-170:python-challenge desmondwalker$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   PyBank/.DS_Store
+	new file:   PyPoll/.DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+
+stp-er-10-129-209-170:python-challenge desmondwalker$ git commit -m "Initial version."
+[master bdc1dc2] Initial version.
+ Committer: Desmond Walker <desmondwalker@stp-er-10-129-209-170.wireless.umn.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 PyBank/.DS_Store
+ create mode 100644 PyPoll/.DS_Store
+stp-er-10-129-209-170:python-challenge desmondwalker$ git push origin master
+Username for 'https://github.com': dezmundw15
+Password for 'https://dezmundw15@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/dezmundw15/python-challenge.git/'
+stp-er-10-129-209-170:python-challenge desmondwalker$ git push origin master
+Username for 'https://github.com': dezmundw15
+Password for 'https://dezmundw15@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/dezmundw15/python-challenge.git/'
+stp-er-10-129-209-170:python-challenge desmondwalker$ git push origin master
+Username for 'https://github.com': dezmundw15
+Password for 'https://dezmundw15@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 808 bytes | 808.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/dezmundw15/python-challenge.git
+   f1ebb0c..bdc1dc2  master -> master
+stp-er-10-129-209-170:python-challenge desmondwalker$ 
